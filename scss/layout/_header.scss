@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: $generalFont;
+}
+
+#navigation {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: $primaryOpacity;
+	right: -415px;
+	top: 0px;
+	transition: right ease 0.5s;
+}
+
+.hero_image {
+	background-size: cover;
+	height: 100vh;
+}
+
+.menu_page {
+	width: 100%;
+	background: $primary;
+	color: $bone;
+	display: flex;
+	justify-content: flex-end;
+	height: 55px;
+	align-items: center;
+	position: fixed;
+	::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 0;
+		width: 0;
+	}
+}
+
+.menu_button {
+	cursor: pointer;
+	padding-right: 30px;
+	display: flex;
+}
+
+.close_button {
+	border: 0;
+	width: 44px;
+	height: 44px;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: $bone;
+	background: $primary;
+	position: absolute;
+	font-size: 1.3em;
+	left: 84%;
+	margin: 6px;
+	z-index: 2;
+}
+
+.menu {
+	color: $bone;
+  margin: 0;
+  padding: 200px 0 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.menu_link {
+	padding: 0 30px;
+  display: block;
+  line-height: 56px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.page--menu-visible::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background: $primary;
+}
+
+.page--menu-visible #navigation {
+	right: 0;
+	z-index: 2;
+}
+
+.hero_name {
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.31;
+	color: $primary;
+	text-align: center;
+	padding-top: 363px;
+	text-transform: uppercase;
+	& h2{
+		color: $secondary;
+	}
+}
+
+.menu__navigation ul .nav_li {
+  font-size: 33px;
+  padding: 10px;
+}

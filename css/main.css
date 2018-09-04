@@ -1,6 +1,142 @@
-body {
-  background-color: pink;
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i,900");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Roboto", serif;
+}
+
+#navigation {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #0B476De0;
+  right: -415px;
+  top: 0px;
+  -webkit-transition: right ease 0.5s;
+  transition: right ease 0.5s;
+}
+
+.hero_image {
+  background-size: cover;
   height: 100vh;
+}
+
+.menu_page {
+  width: 100%;
+  background: #0B476D;
+  color: #FCFBF9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 55px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+}
+
+.menu_page ::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+}
+
+.menu_button {
+  cursor: pointer;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.close_button {
+  border: 0;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FCFBF9;
+  background: #0B476D;
+  position: absolute;
+  font-size: 1.3em;
+  left: 84%;
+  margin: 6px;
+  z-index: 2;
+}
+
+.menu {
+  color: #FCFBF9;
+  margin: 0;
+  padding: 200px 0 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.menu_link {
+  padding: 0 30px;
+  display: block;
+  line-height: 56px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.page--menu-visible::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: #0B476D;
+}
+
+.page--menu-visible #navigation {
+  right: 0;
+  z-index: 2;
+}
+
+.hero_name {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.31;
+  color: #0B476D;
+  text-align: center;
+  padding-top: 363px;
+  text-transform: uppercase;
+}
+
+.hero_name h2 {
+  color: #398689;
+}
+
+.menu__navigation ul .nav_li {
+  font-size: 33px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
