@@ -1,0 +1,27 @@
+.section_about {
+	padding: 70px 0 5px 0;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	color: $primary;
+	font-size: 15px;
+	p {
+		vertical-align: baseline;
+		line-height: 24px;
+		padding-bottom: 20px;
+	}
+}
+
+.section_about-photo {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.section_about-subtitle {
+	font-size: 14px;
+	color: $light;
+	padding-bottom: 10px;
+	span {
+		font-size: 24px;
+	}
+}

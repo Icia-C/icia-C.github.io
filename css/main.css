@@ -29,9 +29,11 @@
 }
 
 .menu_page {
+  position: fixed;
+  z-index: 1;
   width: 100%;
   background: #0B476D;
-  color: #FCFBF9;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +44,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: fixed;
 }
 
 .menu_page ::after {
@@ -68,7 +69,7 @@
   height: 44px;
   cursor: pointer;
   text-transform: uppercase;
-  color: #FCFBF9;
+  color: #FFFFFF;
   background: #0B476D;
   position: absolute;
   font-size: 1.3em;
@@ -78,7 +79,7 @@
 }
 
 .menu {
-  color: #FCFBF9;
+  color: #FFFFFF;
   margin: 0;
   padding: 200px 0 0;
   list-style: none;
@@ -137,6 +138,87 @@
 .menu__navigation ul .nav_li {
   font-size: 33px;
   padding: 10px;
+}
+
+.section_title {
+  width: 150px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.section_title h1 {
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: #398689;
+  text-transform: uppercase;
+}
+
+.section_title h1:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background-color: #398689;
+  bottom: 0;
+  left: 0;
+}
+
+.link {
+  color: #78BE97;
+  text-decoration: none;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  margin: 0px 0 10px;
+  position: relative;
+}
+
+.divider:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 10%;
+  right: 5%;
+  width: 90%;
+  background: #CCC;
+}
+
+.section_about {
+  padding: 70px 0 5px 0;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #0B476D;
+  font-size: 15px;
+}
+
+.section_about p {
+  vertical-align: baseline;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.section_about-photo {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.section_about-subtitle {
+  font-size: 14px;
+  color: #78BE97;
+  padding-bottom: 10px;
+}
+
+.section_about-subtitle span {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */

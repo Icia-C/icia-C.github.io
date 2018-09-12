@@ -19,3 +19,12 @@ closeMenu.addEventListener('click', closeNavMenu);
 //close menu click
 var menuElement= document.querySelector('.menu');
 menuElement.addEventListener('click', closeNavMenu);
+
+// scroll Menú not working
+document.querySelector('.menu_link').addEventListener('click', function(e){
+	e.preventDefault();
+	document.querySelector('.section_about').scrollIntoView({
+		behavior: 'smooth',
+		block:    'start',
+	});
+});
