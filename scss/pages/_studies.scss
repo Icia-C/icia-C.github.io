@@ -1,0 +1,18 @@
+.card_box {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $light;
+	background-color: $greylight;
+	li {
+		list-style: none;
+	}
+}
+
+.card_box-icon {
+	width: 30%;
+	padding-bottom: 25px;
+}
