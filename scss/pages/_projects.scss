@@ -1,8 +1,14 @@
+.container_projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
 .card_project {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	padding: 10px;
 	margin: 10px 0 25px 0;
+	width: 325px;
 	img {
 		width: 100%;
 		border-radius: 4px;
@@ -13,10 +19,29 @@
 	}
 }
 
+.text_project {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 2px;
+		background-color: $light;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 10px;
+	}
+}
+
 .icon {
-	position: absolute;
-	margin-right: 0;
-	left: 80%;
-	height: 25px;
-	margin: 5px;
+	display: flex;
+	margin-bottom: 5px;
+	img {
+		height: 20px;
+		margin-right: 10px;
+	}
 }

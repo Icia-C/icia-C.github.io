@@ -10,9 +10,12 @@
 	height: 100%;
 	width: 100%;
 	background: $primaryOpacity;
-	right: -415px;
+	right: -2000px;
 	top: 0px;
 	transition: right ease 0.5s;
+	@media all and(min-width: 1100px){
+		width: 40%;
+	}
 }
 
 .hero_image {
@@ -37,6 +40,10 @@
 		top: 0;
 		height: 0;
 		width: 0;
+	}
+	@media all and(min-width: 1100px){
+		width: 40%;
+		margin-left: 60%;
 	}
 }
 
@@ -74,7 +81,7 @@
 }
 
 .menu_link {
-	padding: 0 30px;
+	padding: 0 20px;
 	display: block;
 	line-height: 56px;
 	color: inherit;
@@ -98,7 +105,8 @@
 }
 
 .hero_name {
-	font-size: 1.2em;
+	position: relative;
+	font-size: 1em;
 	font-weight: bold;
 	line-height: 1.31;
 	color: $primary;
@@ -106,7 +114,10 @@
 	padding-top: 48vh;
 	text-transform: uppercase;
 	& h2{
-		color: $secondary;
+		color: $bone;
+	}
+	@media all and(min-width: 1100px){
+		font-size: 2.5em;
 	}
 }
 

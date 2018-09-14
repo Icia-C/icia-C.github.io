@@ -1,9 +1,10 @@
 .content_footer {
+	position: relative;;
 	background-color: $primary;
 	color: $bone;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	padding: 25px 25px 5px 25px;
 }

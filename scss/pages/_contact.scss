@@ -1,3 +1,9 @@
+.section_contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 .network {
 	margin-top: 20px;
 	list-style: none;
@@ -22,5 +28,29 @@
 		width: 40px;
 		height: 40px;
 		margin-right: 15px;
+	}
+}
+
+.top_page{
+	position: absolute;
+	left: 85%;
+	bottom: 10px;
+	background-color: $bone;
+	border: solid;
+	border-color: $light;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 40px;
+		height: 40px;
+		color: $primary;
+	}
+	@media all and(min-width: 500px){
+		left: 90%;
 	}
 }

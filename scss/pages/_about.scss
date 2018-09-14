@@ -1,5 +1,11 @@
+.section_about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 .section_about-photo {
-	width: 100%;
+	width: 290px;
 	margin: 10px 0;
 }
 
@@ -10,4 +16,7 @@
 	span {
 		font-size: 24px;
 	}
+}
+.section_about-description {
+	width: 300px;
 }
