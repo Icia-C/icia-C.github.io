@@ -4,14 +4,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title><Icía Colomar Rey/></title>
+		<title>Icía Colomar Rey</title>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<header class="hero_image"><!--header-->
 			<div class="menu_page">
 				<div class="menu_button"><!--menu button-->
-					<img  class="menu_open" src="img/ico-menu.svg" alt="menu button">
+					<img  class="menu_open" src="img/svg/ico-menu.svg" alt="menu button">
 				</div>
 				<nav id="navigation">
 					<button type="button" class="close_button" title="Close">x</button>
@@ -23,10 +23,16 @@
 							<a class="menu_link studies" href="#studies">Estudios</a>
 						</li>
 						<li class="menu_item">
-							<a class="menu_link" href="#proyects">Proyectos</a>
+							<a class="menu_link projects" href="#projects">Mis Proyectos</a>
 						</li>
 						<li class="menu_item">
-							<a class="menu_link" href="#skills">Habilidades</a>
+							<a class="menu_link skills" href="#skills">Habilidades</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_link contact" href="#contact">¿Nos seguimos?</a>
+						</li>
+						<li class="menu_item">
+							<a class="menu_link" href="https://medium.com/@icia83" target="_blank">Blog</a>
 						</li>
 					</ul>
 				</nav>
@@ -56,43 +62,198 @@
 
 		<div class="divider"></div>
 
-		<section class="section" id="studies">
+		<section class="section" id="studies"><!--section studies-->
 			<div class="section_title">
 				<h1>Estudios</h1>
 			</div>
-			<div class="card_box">
-				<img src="img/mention.svg" alt="academic" class="card_box-icon">
-				<h2>Técnico en Cocina</h2>
-				<p>Escuela de Hostelería y Turismo Fuenllana</p>
+			<div class="studies_box">
+				<div class="card_box">
+					<img src="img/svg/paper-plane.svg" alt="paper-plane" class="card_box-icon">
+					<h2>Programación Web Front End</h2>
+					<p>Adalab Digital</p>
+				</div>
+				<div class="card_box">
+					<img src="img/svg/idea.svg" alt="idea" class="card_box-icon">
+					<h2>Grado en Ingeniería Informática</h2>
+					<span>(en proceso)</span>
+					<p>Universitat Oberta de Catalunya</p>
+				</div>
+				<div class="card_box">
+					<img src="img/svg/mention.svg" alt="mention" class="card_box-icon">
+					<h2>Técnico en Cocina</h2>
+					<p>Escuela de Hostelería y Turismo Fuenllana</p>
+				</div>
+				<div class="card_box">
+					<img src="img/svg/push-pin.svg" alt="push-pin" class="card_box-icon">
+					<h2>Formación Adicional</h2>
+					<ul>
+						<li class="list">Autocad 2009</li>
+						<li>PRL para personal de oficina</li>
+						<li>Marketin 2.0</li>
+					</ul>
+				</div>
 			</div>
-			<div class="card_box">
-				<img src="img/idea.svg" alt="academic" class="card_box-icon">
-				<h2>Grado en Ingeniería Informática</h2>
-				<span>(en proceso)</span>
-				<p>Universitat Oberta de Catalunya</p>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="section" id="projects"><!--section projects-->
+			<div class="section_title">
+				<h1>Mis Proyectos</h1>
 			</div>
-			<div class="card_box">
-				<img src="img/paper-plane.svg" alt="academic" class="card_box-icon">
-				<h2>Programación Web Front End</h2>
-				<p>Adalab Digital</p>
+			<div>
+				<div class="card_project">
+					<a class="icon" href="https://icia-c.github.io/PokeDex_MaterialUI" target="_blank">
+						<img src="img/svg/open-new.svg" alt="open-new">
+					</a>
+					<img src="img/pokedex.jpg" alt="pokedex">
+					<h3>PokéDex - Material-UI</h3>
+					<p>Proyecto realizado en <strong>React</strong> implementando la librería de <a class="link" href="https://material-ui.com/">Material-UI</a>, donde se realiza una llamada a la <a class="link" href="https://pokeapi.co/">API de Pokemon</a> para traer diferentes especies.</p>
+				</div>
+				<div class="card_project">
+					<a class="icon" href="https://timetracking-coddde.firebaseapp.com" target="_blank">
+						<img src="img/svg/open-new.svg" alt="open-new">
+					</a>
+					<img src="img/fireTimer.jpg" alt="fireTimer">
+					<h3>Timetraking para Coddde con Firebase</h3>
+					<p>Proyecto final de <a class="link" href="https://adalab.es/" target="_blank">ADALAB</a> realizado en <strong>React</strong> utilizando <strong>Firebase</strong> para controlar el tiempo de las tareas realizadas.</p>
+				</div>
+				<div class="card_project">
+					<a class="icon" href="http://beta.adalab.es/clarke-s2-scriptoras/" target="_blank">
+						<img src="img/svg/open-new.svg" alt="open-new">
+					</a>
+					<img src="img/nan.jpg" alt="NAN">
+					<h3>Refactorición con React</h3>
+					<p>Proyecto del ucarto Sprint de  <a class="link" href="https://adalab.es/" target="_blank">ADALAB</a> en el cual debíamos refactorizar el curriculum interactivo realizado por otras compañeras utilizando <strong>React</strong>.</p>
+				</div>
+				<div class="card_project">
+					<a class="icon" href="http://beta.adalab.es/clarke-s2-scriptoras/" target="_blank">
+						<img src="img/svg/open-new.svg" alt="open-new">
+					</a>
+					<img src="img/scriptoras.jpg" alt="Scriptoras">
+					<h3>Curriculum interactivo</h3>
+					<p>Proyecto del segundo Sprint de  <a class="link" href="https://adalab.es/" target="_blank">ADALAB</a>. Tan solo 15 días después de empezar el curso se nos propuso crear un curriculum interactivo utilizando <strong>JavaScript</strong>.</p>
+				</div>
 			</div>
-			<div class="card_box">
-				<img src="img/push-pin.svg" alt="academic" class="card_box-icon">
-				<h2>Otros cursos</h2>
-				<ul>
-					<li class="list">Autocad 2009</li>
-					<li>PRL para personal de oficina</li>
-					<li>Marketin 2.0</li>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="section" id="skills"><!--section skills-->
+			<div class="section_title">
+				<h1>Habilidades</h1>
+			</div>
+				<ul class="skills1">
+					<li>
+						<img src="/img/skills/html5.svg" alt="html5">
+						<p>HTML5</p>
+					</li>
+					<li>
+						<img src="/img/skills/css3.svg" alt="css3">
+						<p>CSS3</p>
+					</li>
+					<li>
+						<img src="/img/skills/javascript.png" alt="javascript">
+						<p>JavaScript</p>
+					</li>
+					<li>
+						<img src="/img/skills/sass.png" alt="sass">
+						<p>SASS</p>
+					</li>
+					<li>
+						<img src="/img/skills/gulp.svg" alt="gulp">
+						<p>GULP</p>
+					</li>
+					<li>
+						<img src="/img/skills/git.png" alt="git">
+						<p>GIT</p>
+					</li>
+					<li>
+						<img src="/img/skills/es6.png" alt="es6">
+						<p>ES6</p>
+					</li>
+					<li>
+						<img src="/img/skills/react.png" alt="react">
+						<p>REACT</p>
+					</li>
+					<li>
+						<img src="/img/skills/atom.png" alt="atom">
+						<p>ATOM</p>
+					</li>
+					<li>
+						<img src="/img/skills/vsc.svg" alt="vsc">
+						<p>VS Code</p>
+					</li>
+					<li>
+						<img src="/img/skills/zeplin.jpg" alt="zeplin">
+						<p>ZEPLIN</p>
+					</li>
+					<li>
+						<img src="/img/skills/slack.svg" alt="slack">
+						<p>SLACK</p>
+					</li>
+					<li>
+						<img src="/img/skills/trello.svg" alt="trello">
+						<p>TRELLO</p>
+					</li>
+					<li>
+						<img src="/img/skills/photoshop.png" alt="photoshop">
+						<p>Photoshop</p>
+					</li>
+					<li>
+						<img src="/img/skills/autocad.png" alt="autocad">
+						<p>Autocad</p>
+					</li>
+					<li>
+						<img src="/img/skills/office.svg" alt="office">
+						<p> MS Office</p>
+					</li>
+					<li>Agile</li>
+					<li>Mobile first</li>
+					<li>Responsive design</li>
+					<li>Terminal</li>
 				</ul>
 			</div>
 		</section>
 
 		<div class="divider"></div>
 
+		<section class="section" id="contact"><!--section contact-->
+			<div class="section_title">
+				<h1>¿Nos seguimos?</h1>
+			</div>
+			<a class="email" href="mailto:icia.colomar@gmail.com" target="_blank">
+				<img src="/img/svg/correo.svg" alt="email"> icia.colomar@gmail.com
+			</a>
+			<div >
+				<ul class="network">
+					<li>
+						<a class="network_icon" href="https://www.linkedin.com/in/iciacolomarrey/" target="_blank">
+							<img src="/img/svg/linkedin.svg" alt="linkedin">
+						</a>
+					</li>
+					<li>
+						<a class="network_icon" href="https://github.com/Icia-C" target="_blank">
+							<img src="/img/svg/github.svg" alt="github">
+						</a>
+					</li>
+					<li>
+						<a class="network_icon" href="https://twitter.com/L_Troublemakers" target="_blank">
+							<img src="/img/svg/twitter.svg" alt="twitter">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-
-		<footer>
-			<div>Icons made by <a href="https://www.flaticon.com/authors/hand-drawn-goods" title="Hand Drawn Goods">Hand Drawn Goods</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+		<footer class="content_footer"><!--section footer-->
+			<div class="copyright">
+				<span>Icía Colomar Rey</span>
+				<span>Copyright © 2018</span>
+			</div>
+			<div class="footer_references">
+				Icons made by <a href="https://www.flaticon.com/authors/hand-drawn-goods" title="Hand Drawn Goods">Hand Drawn Goods</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
 		</footer>
 
 		<script src="js/main.min.js"></script>

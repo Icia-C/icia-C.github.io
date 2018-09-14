@@ -35,17 +35,24 @@ document.querySelector('.studies').addEventListener('click', function(e){
 		block:    'start',
 	});
 });
-// document.querySelector('.about').addEventListener('click', function(e){
-// 	e.preventDefault();
-// 	document.getElementById('about').scrollIntoView({
-// 		behavior: 'smooth',
-// 		block:    'start',
-// 	});
-// });
-// document.querySelector('.about').addEventListener('click', function(e){
-// 	e.preventDefault();
-// 	document.getElementById('about').scrollIntoView({
-// 		behavior: 'smooth',
-// 		block:    'start',
-// 	});
-// });
+document.querySelector('.projects').addEventListener('click', function(e){
+	e.preventDefault();
+	document.getElementById('projects').scrollIntoView({
+		behavior: 'smooth',
+		block:    'start',
+	});
+});
+document.querySelector('.contact').addEventListener('click', function(e){
+	e.preventDefault();
+	document.getElementById('contact').scrollIntoView({
+		behavior: 'smooth',
+		block:    'start',
+	});
+});
+document.querySelector('.skills').addEventListener('click', function(e){
+	e.preventDefault();
+	document.getElementById('skills').scrollIntoView({
+		behavior: 'smooth',
+		block:    'start',
+	});
+});

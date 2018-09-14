@@ -1,0 +1,25 @@
+.skills1 {
+	margin-top: 20px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: $greylight;
+	padding: 25px 25px 0 0 ;
+	li {
+		background-color: $bone;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 25px 25px;
+		padding: 5px;
+		font-weight: bold;
+		width: 95px;
+	}
+	img {
+		height: 40px;
+		margin: 10px;
+	}
+}
