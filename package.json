@@ -27,7 +27,7 @@
 		"type": "git",
 		"url": "git+ssh://git@github.com:Icia-c/icia-c.github.io"
 	},
-	"author": "Adalab",
+	"author": "Icía Colomar",
 	"license": "MIT",
 	"homepage": "https://github.com/Icia-C/icia-c.github.io"
 }
